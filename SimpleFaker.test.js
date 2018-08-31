@@ -6,7 +6,7 @@ import SimpleFaker, {
   METHOD_OPTIONS,
   METHOD_PATCH,
   METHOD_PUT
-} from ".";
+} from "./dist/main";
 
 describe("Simple Faker fakes API calls", () => {
   [METHOD_PUT, METHOD_POST, METHOD_DELETE, METHOD_PATCH].forEach(method => {
