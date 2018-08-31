@@ -12,6 +12,13 @@ class SimpleFaker {
   constructor(port) {
     this.app = express();
     this.app.use(bodyParser.json());
+
+    this.app.use(function(req, res, next) {
+      res.header("Access-Control-Allow-Origin", "*");
+      res.header("Access-Control-Allow-Headers", "*");
+      next();
+    });
+
     this.server = this.app.listen(port, () =>
       console.log(`Simple Faker started on port ${port}`)
     );
