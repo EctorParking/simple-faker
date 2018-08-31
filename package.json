@@ -1,6 +1,6 @@
 {
   "name": "simple-faker",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Quickly intercept, mock and inspect API calls in your tests",
   "main": "index.js",
   "scripts": {
